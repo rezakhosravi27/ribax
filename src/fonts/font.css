@@ -1,0 +1,30 @@
+@font-face {
+    font-family: vazir;
+    src: url(./vazirFont/Vazir-Medium.ttf) format("ttf");
+    src: url(./vazirFont/Vazir-Medium.eot) format("eot");
+    src: url(./vazirFont/Vazir-Medium.woff) format("woff");
+    src: url(./vazirFont/Vazir-Medium.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: vazirBold;
+    src: url(./vazirFont/Vazir-Bold.ttf) format("ttf");
+    src: url(./vazirFont/Vazir-Bold.eot) format("eot");
+    src: url(./vazirFont/Vazir-Bold.woff) format("woff");
+    src: url(./vazirFont/Vazir-Bold.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: vazirLight;
+    src: url(./vazirFont/Vazir-Light.ttf) format("ttf");
+    src: url(./vazirFont/Vazir-Light.eot) format("eot");
+    src: url(./vazirFont/Vazir-Light.woff) format("woff");
+    src: url(./vazirFont/Vazir-Light.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: vazirDigits;
+    src: url(./vazirFont/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.ttf) format("ttf");
+    src: url(./vazirFont/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.eot) format("eot");
+    src: url(./vazirFont/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.woff) format("woff");
+}

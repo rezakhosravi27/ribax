@@ -1,38 +1,82 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import Grid from "@mui/material/Grid";
+import Paper from "@mui/material/Paper";
+import Typography from "@mui/material/Typography";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 
-import "./CommentSlider.css";
-
 // import required modules
 import { Pagination } from "swiper";
 
-export default function App() {
+const styles = {
+  paperStyles: {
+    height: "100%",
+    padding: "1rem",
+    width: "100%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    boxShadow: "0px 0px 5px #333",
+    flexDirection: "column",
+  },
+  swiper: {
+    width: "100%",
+    height: "100%",
+    padding: "2rem .1rem ",
+  },
+  swiperSlide: {
+    textAlign: "center",
+    fontSize: "18px",
+    background: "#fff",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+};
+
+export default function CommentSlider() {
   return (
-    <>
+    <Grid item sx={{ height: "40vh" }}>
       <Swiper
         slidesPerView={3}
         spaceBetween={30}
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination]}
-        className="mySwiper"
+        modules={[]}
+        style={styles.swiper}
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        {[0, 1, 2, 3, 4, 5, 6, 7].map((item, index) => {
+          return (
+            <SwiperSlide style={styles.swiperSlide}>
+              <Paper style={styles.paperStyles}>
+                <Typography
+                  variant="caption"
+                  sx={{ direction: "ltr", textAlign: "justify" }}
+                >
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                  تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                  کاربردی می باشد. کتابهای...
+                </Typography>
+                <Typography
+                  variant="caption"
+                  textAlign="left"
+                  color="gray"
+                  sx={{ width: "100%", mt: 3 }}
+                >
+                  توسط : رضا
+                </Typography>
+              </Paper>
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
-    </>
+    </Grid>
   );
 }

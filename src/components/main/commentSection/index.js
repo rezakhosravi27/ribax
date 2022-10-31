@@ -1,5 +1,11 @@
 import React from "react";
+import Container from "@mui/material/Container";
+import CommentSlider from "./CommentSlider";
 
 export default function index() {
-  return <div>index</div>;
+  return (
+    <Container maxWidth={false}>
+      <CommentSlider />
+    </Container>
+  );
 }

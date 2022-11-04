@@ -9,6 +9,7 @@ import NikeBanner from "./nikeBanner";
 import PopularArticles from "./popularArticles";
 import CommentSection from "./commentSection";
 import BrandSection from "./brandSection";
+import Footer from "./footer";
 
 export default function index() {
   return (
@@ -23,6 +24,7 @@ export default function index() {
       <PopularArticles />
       <CommentSection />
       <BrandSection />
+      <Footer />
     </>
   );
 }

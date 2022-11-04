@@ -26,7 +26,7 @@ const styles = {
   swiper: {
     width: "100%",
     height: "100%",
-    padding: "2rem .1rem ",
+    padding: "2rem .2rem ",
   },
   swiperSlide: {
     textAlign: "center",
@@ -46,6 +46,17 @@ export default function CommentSlider() {
         spaceBetween={30}
         pagination={{
           clickable: true,
+        }}
+        breakpoints={{
+          500: {
+            slidesPerView: 1.5,
+          },
+          700: {
+            slidesPerView: 3,
+          },
+          900: {
+            slidesPerView: 3.5,
+          },
         }}
         modules={[]}
         style={styles.swiper}

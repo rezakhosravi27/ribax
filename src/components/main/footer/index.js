@@ -15,8 +15,9 @@ export default function index() {
         backgroundColor: "#333",
       }}
     >
+      
       <Container maxWidth="lg">
-        <Grid container sx={{ py: { xl: 5, md: 10 } }}>
+        <Grid container sx={{ py: { xs: 5, md: 10 } }}>
           {[0, 1, 2, 3].map((item, index) => {
             return (
               <Grid item xs={12} md={3} key={index}>
@@ -44,7 +45,7 @@ export default function index() {
         </Grid>
         <Divider sx={{ backgroundColor: "white" }} />
         <Grid container sx={{ py: { xs: 2 } }} justifyContent="flex-end">
-          <Typography textAlign="right" variant="caption" color="white">
+          <Typography textAlign="left" variant="caption" color="white">
             <Typography component="span" color="error" variant="caption">
               REEBOX ©{" "}
             </Typography>

@@ -7,7 +7,7 @@ import PopularProductsSlider from "./PopularProductsSlider";
 export default function index() {
   return (
     <Container maxWidth={false}>
-      <Box my={10} sx={{ mt: { xs: 130, md: 0 } }}>
+      <Box my={10} sx={{ mt: { xs: 100, md: 0 } }}>
         <Title />
         <PopularProductsSlider />
       </Box>

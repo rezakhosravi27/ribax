@@ -48,7 +48,7 @@ export default function SpecialSaleSlider() {
       <Swiper
         style={{ width: "100%", height: "100%" }}
         breakpoints={{
-          500: {
+          300: {
             slidesPerView: 1.5,
           },
           700: {
@@ -64,7 +64,7 @@ export default function SpecialSaleSlider() {
         pagination={{
           clickable: true,
         }}
-        modules={[FreeMode, Pagination]}
+        modules={[FreeMode]}
         className="mySwiper"
       >
         {[0, 1, 2, 3, 4, 5, 6, 7].map((slide, index) => {

@@ -27,7 +27,7 @@ export default function FolderList() {
             my: 3,
           }}
         >
-          <Grid item xs={6} md={3}>
+          <Grid item xs={12} sm={6} md={3}>
             <ListItem>
               <ListItemAvatar>
                 <Avatar sx={{ width: 56, height: 56, mr: 2 }}>
@@ -40,7 +40,7 @@ export default function FolderList() {
               />
             </ListItem>
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={12} sm={6} md={3}>
             <ListItem>
               <ListItemAvatar>
                 <Avatar sx={{ width: 56, height: 56, mr: 2 }}>
@@ -53,7 +53,7 @@ export default function FolderList() {
               />
             </ListItem>
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={12} sm={6} md={3}>
             <ListItem>
               <ListItemAvatar>
                 <Avatar sx={{ width: 56, height: 56, mr: 2 }}>
@@ -66,7 +66,7 @@ export default function FolderList() {
               />
             </ListItem>
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={12} sm={6} md={3}>
             <ListItem>
               <ListItemAvatar>
                 <Avatar sx={{ width: 56, height: 56, mr: 2 }}>

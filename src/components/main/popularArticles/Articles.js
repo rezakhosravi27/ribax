@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Articles() {
   const classes = useStyles();
   return (
-    <Grid container spacing={5} my={5}>
+    <Grid container spacing={5} my={1}>
       <Grid
         item
         xs={12}

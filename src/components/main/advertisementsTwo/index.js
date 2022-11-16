@@ -39,14 +39,19 @@ export default function Index() {
               top: "70%",
               left: "50%",
               transform: "translate(-50%, 0)",
-              p: { xs: 4, md: 2, lg: 4 },
+              p: { xs: 3, md: 2, lg: 4 },
               backgroundColor: "#fff",
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
             }}
           >
-            <Typography color="black">لباس تمرين زنانه</Typography>
+            <Typography
+              color="black"
+              sx={{ fontSize: { xs: ".9rem", md: "1rem" } }}
+            >
+              لباس تمرين زنانه
+            </Typography>
             <Typography
               color="black"
               variant="caption"
@@ -71,14 +76,19 @@ export default function Index() {
               top: "70%",
               left: "50%",
               transform: "translate(-50%, 0)",
-              p: { xs: 4, md: 2, lg: 4 },
+              p: { xs: 3, md: 2, lg: 4 },
               backgroundColor: "#fff",
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
             }}
           >
-            <Typography color="black">لباس تمرين زنانه</Typography>
+            <Typography
+              color="black"
+              sx={{ fontSize: { xs: ".9rem", md: "1rem" } }}
+            >
+              لباس تمرين زنانه
+            </Typography>
             <Typography
               color="black"
               variant="caption"
@@ -103,14 +113,19 @@ export default function Index() {
               top: "70%",
               left: "50%",
               transform: "translate(-50%, 0)",
-              p: { xs: 4, md: 2, lg: 4 },
+              p: { xs: 3, md: 2, lg: 4 },
               backgroundColor: "#fff",
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
             }}
           >
-            <Typography color="black">لباس تمرين زنانه</Typography>
+            <Typography
+              color="black"
+              sx={{ fontSize: { xs: ".9rem", md: "1rem" } }}
+            >
+              لباس تمرين زنانه
+            </Typography>
             <Typography
               color="black"
               variant="caption"

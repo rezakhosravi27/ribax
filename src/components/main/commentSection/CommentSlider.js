@@ -40,7 +40,7 @@ const styles = {
 
 export default function CommentSlider() {
   return (
-    <Grid item sx={{ height: "40vh" }}>
+    <Grid item sx={{ minHeight: "50vh" }}>
       <Swiper
         slidesPerView={3}
         spaceBetween={30}
@@ -48,7 +48,7 @@ export default function CommentSlider() {
           clickable: true,
         }}
         breakpoints={{
-          500: {
+          300: {
             slidesPerView: 1.5,
           },
           700: {

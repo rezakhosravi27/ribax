@@ -35,6 +35,7 @@ export default function Index() {
           <Box
             component="div"
             sx={{
+              width: '100%', 
               position: "absolute",
               top: "50%",
               left: "50%",
@@ -45,11 +46,11 @@ export default function Index() {
               transform: "translate(-50%, -50%)",
             }}
           >
-            <Typography color="white" variant="h6" sx={{ fontSize: "2vw" }}>
+            <Typography color="white" variant="h6" sx={{ fontSize: {xs: '5vw', md: "2vw"} }}>
               لباس زنانه
             </Typography>
-            <Typography color="white" variant="h3">
-              تا 30% تخفيف{" "}
+            <Typography color="white" variant="h3" sx={{fontSize: {xs: '2rem', md: '3rem'}}}>
+              تا 30% تخفيف
             </Typography>
             <Button variant="contained">خريد كن</Button>
           </Box>
@@ -80,10 +81,10 @@ export default function Index() {
                   transform: "translate(0, -50%)",
                 }}
               >
-                <Typography color="black" sx={{ fontSize: "2.5rem" }}>
+                <Typography color="black" sx={{ fontSize: {xs: '2rem', md: "2.5rem"} }}>
                   كفش
                 </Typography>
-                <Typography color="black" sx={{ fontSize: "2.5rem" }}>
+                <Typography color="black" sx={{ fontSize: {xs: '2rem', md: "2.5rem"} }}>
                   دويدن
                 </Typography>
                 <Button
@@ -119,10 +120,10 @@ export default function Index() {
                   transform: "translate(0, -50%)",
                 }}
               >
-                <Typography color="white" sx={{ fontSize: "2.5rem" }}>
-                  تيشزت
+                <Typography color="white" sx={{ fontSize: {xs: '2rem', md: "2.5rem"} }}>
+                  تيشرت
                 </Typography>
-                <Typography color="white" sx={{ fontSize: "2.5rem" }}>
+                <Typography color="white" sx={{ fontSize: {xs: '2rem', md: "2.5rem"} }}>
                   مردانه
                 </Typography>
                 <Button

@@ -69,7 +69,7 @@ export default function PopularProductsSlider() {
       <Swiper
         style={{ width: "100%", height: "100%" }}
         breakpoints={{
-          500: {
+          300: {
             slidesPerView: 1.5,
           },
           700: {
@@ -85,7 +85,7 @@ export default function PopularProductsSlider() {
         pagination={{
           clickable: true,
         }}
-        modules={[FreeMode, Pagination]}
+        modules={[FreeMode]}
         className="mySwiper"
       >
         {data.map((slide, index) => {
